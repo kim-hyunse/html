@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My University Life</title>
+        <style>
+            * {text-decoration: none;}
+            #g2 {width:65%;}
+            #header1 {text-align:center; 
+                color:rgb(255, 255, 255);
+                background-color: rgb(0, 85, 182);
+                padding-top: 20px;
+                padding-bottom: 10px;
+                font-weight: bold;
+                font-size: 2.5em;}
+            #header2 {text-align:center; 
+                background-color: rgb(0, 85, 182);
+                padding-bottom: 15px;
+                color:rgb(192, 192, 192);}
+            #facilities {text-align:center; 
+                color:rgb(255, 255, 255);
+                background-color: rgba(22, 102, 193, 0.897);
+                padding-top: 100px;
+                padding-bottom: 100px;
+                font-weight: bold;
+                font-size:x-large;
+                width: 33.3%;
+                float: left;}
+            #department {text-align:center; 
+                color:rgb(255, 255, 255);
+                background-color: rgba(62, 136, 220, 0.894);
+                padding-top: 100px;
+                padding-bottom: 100px;
+                font-weight: bold;
+                width: 33.4%;
+                float: left;
+                font-size:x-large;}
+            #restaurant {text-align:center; 
+                color:rgb(255, 255, 255);
+                background-color: rgba(64, 153, 255, 0.571);
+                padding-top: 100px;
+                padding-bottom: 100px;
+                font-weight: bold;
+                width: 33.3%;
+                font-size:x-large;
+                float: left;
+                } 
+            #footer {text-align:right; 
+                color:rgb(94, 94, 94);
+                } 
+            p {font-size: large;}
+            @media (max-width: 710px) {
+                p {font-size: medium;}
+                #facilities, #department, #restaurant {clear: both;
+                    font-size: large;
+                    width:100%;
+                    padding-top: 40px;
+                    padding-bottom: 40px;}
+                #header1 {font-size: xx-large;}
+            }
+            @media (min-width:1000px) {
+                #g2 {width:650px;
+                }
+            }
+            a:hover #restaurant{background-color: #d6ecff67;
+                color:rgb(15, 97, 191);}
+            a:hover #department{background-color: #d6ecff67;
+                color:rgb(15, 97, 191);}
+            a:hover #facilities{background-color: #d6ecff67;
+                color:rgb(15, 97, 191);}
+        </style>
+    </head>
+
+    <body>
+        <div id="header1">
+            Welcome to Gachon University 
+        </div> 
+        <div id="header2">
+            <img id="g2" src="g2.png">
+            <p>This site provide you with information of the campus of Gachon University. </p>
+        </div>
+        <a href="facilities.html">
+            <div id="facilities">
+                <img src="g3.png" width="35px">
+                Facilities
+            </div>
+        </a>
+        <a href="Department.html">
+            <div id="department">
+                <img src="g3.png" width="35px">
+                Department
+            </div>
+        </a>
+        <a href="gachon.html">
+            <div id="restaurant">
+                <img src="g3.png" width="35px">
+                Restaurant
+            </div>
+        </a>   
+       <div style="text-align: right">
+        <div class="footer">
+            <p><b>Web Programming </b> &nbsp; &nbsp; : &nbsp; &nbsp;
+                202135553 Sehyeon Yun &nbsp; &nbsp;/202034918 Seyoung Park  &nbsp; &nbsp;/<br>
+				 202234945 seunggyu Han &nbsp; &nbsp;  / 202236975 Jisung Han &nbsp; &nbsp
+                <br>
+            </p>
+        </div>
+    </div>
+    </body>
+</html>

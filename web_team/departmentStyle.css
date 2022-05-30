@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    background-color: #004593;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    padding: 30px;
+    width: 60%;
+    text-align: center;
+    background: white;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+.contents:after {
+    content: "";
+  
+    clear: both;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left:20px;
+   
+
+}
+
+.middlecolumn{
+     float: left;
+    width: 50%;
+
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.card .ratingmenu {
+    font-family: 'Kalam', 'Nanum Pen Script', cursive;
+    font-size: 20px;
+}
+
+.card .display {
+    font-family: 'Kalam', 'Nanum Pen Script', cursive;
+    font-size: 20px;
+}
+
+.footer {
+    padding: 5px 20px 5px 20px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px 20px 20px 20px;
+    font-style: italic;
+    font-size: small;
+    color: white;
+		
+	}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        display: none;
+    }
+}
+
+#d1 {
+    border: solid black;
+    border-width: 2px;
+    margin: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
+}
+
+#d2 {
+    border: solid black;
+}
+
+#table {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 3px;
+}
+
+.col1 {
+    width: 40%;
+}
+
+.col2 {
+    width: 60%;
+}

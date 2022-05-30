@@ -1,0 +1,169 @@
+
+<html lang="EN">
+
+    <head>
+        <title>My University Life</title>
+        <META charset="UTF-8">
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Bebas+Neue&family=Caveat:wght@400;500;600&&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Patrick+Hand&family=Caveat+Brush&family=Kalam:wght@300;400&display=swap');
+    
+            @import url('mainStyle.css');
+    
+            @import url('menuStyle.css');
+    
+            body {
+                font-family: 'Roboto Condensed', sans-serif;
+                padding: 10px;
+                background-color: #004593;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+        <script>
+    
+            function println(value) {
+    
+                if (value != undefined) document.write(value);
+                document.write("<br>");
+    
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div style="text-align: center">
+            <div class="header">
+                <h1>My University Life</h1>
+                <p>GACHON UNIVERSITY</p>
+            </div>
+        </div>
+        <section class="blurry-menu"><!--여기까지 수정 X -->
+            <ul>
+                  <li><a href="main.html">Main</a></li><!--main html만들어서 첨부하기-->
+                  <li><a href="facilities.html">Facilities</a></li><!--Facilities html만들어서 첨부하기-->
+                  <li><a href="Department.html">Department</a></li><!--Department html만들어서 첨부하기-->
+                  <li><a href="gachon.html">Restaurant</a></li>
+            </ul><br>
+            <ul>
+                <li><a href="facilities.html">convenience</a></li>
+                <li><a href="bookstore.html">bookstores</a></li>
+                <li><a href="vehicle.html">vehicle</a></li>
+            </ul>
+        </section>
+        <div class="contents">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>convenience store</h2>
+                    <h3>Location and information of convenience stores within the school</h3>
+            
+    
+                    
+            
+                </div>
+            <div class="card">
+            <a href="https://emart24.co.kr/" ><h2>emart24</h2></a>
+            <p>클릭해서 정보 확인하기</p>
+            <img src="emart24.png" title="생활 서비스" width="600" height="400">
+            <a href="https://m.place.naver.com/cvs/37308151/home?entry=ple" target="_blank"><h2>GS25</h2></a>
+            <p>클릭해서 메뉴 확인하기</p>
+            <h3>-배달 주문<br>
+                최소주문금액 10,000원 이상<br>
+                배달비 3,000원</h3>
+            <a href="https://www.cvsnet.co.kr/" target="_blank"><h2>GS25 POSTBOX</h2></a>
+            <p>클릭해서 택배 보내기</p>
+            <img src="택배.png" title="택배 서비스" width="600" height="400">    
+                <h3>기본 운임비:2900원 + 무게에 따라 추가 금액발생</h3>
+            </div>    
+            
+        </div>
+            
+            
+            <div class="rightcolumn">
+                <div class="card" style="height: 500px">
+        <div id="map" style="width:100%;height:450px;"></div>
+    편의점 위치
+                    <script type="text/javascript"
+                        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ceb4c80afbee639b701a5b08fb75a6f2"></script>
+                    <script>
+                        var mapContainer = document.getElementById('map'), 
+                            mapOption = {
+                                  center: new kakao.maps.LatLng(37.44827791693464, 127.12707599785348 ), 
+                                level: 5, 
+                                mapTypeId: kakao.maps.MapTypeId.ROADMAP 
+    
+                            };
+                        
+                        var map = new kakao.maps.Map(mapContainer, mapOption);
+    
+    
+                        var positions = [
+                            {
+                                title: '이마트24',
+                                latlng: new kakao.maps.LatLng(37.4525268, 127.1326255 )
+                            },
+                            {
+                                title: '이마트24',
+                                latlng: new kakao.maps.LatLng(37.455697, 127.133151 )
+                            },
+                            {
+                                title: '이마트24',
+                                latlng: new kakao.maps.LatLng(37.455930, 127.133998 )
+                            },
+                            {
+                                title: 'GS25',
+                                latlng: new kakao.maps.LatLng(37.4485755, 127.1271201 )
+                            },
+                            {
+                                title: '세븐일레븐',
+                                latlng: new kakao.maps.LatLng(37.4493883, 127.1270931 )
+                            },
+                            {
+                                title: '세븐일레븐',
+                                latlng: new kakao.maps.LatLng(37.4495181, 127.1270887 )
+                            },
+                            {
+                                title: '세븐일레븐',
+                                latlng: new kakao.maps.LatLng(37.4512461, 127.1292778 )
+                            },
+    
+                            ];
+    
+                        var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+    
+                        for (var i = 0; i < positions.length; i++) {
+    
+                            
+                            var imageSize = new kakao.maps.Size(24, 35);
+    
+                            
+                            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+    
+                            
+                            var marker = new kakao.maps.Marker({
+                                map: map, 
+                                position: positions[i].latlng, 
+                                title: positions[i].title, 
+                                image: markerImage  
+                            });
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+            
+        </div>
+         
+ 
+       <div style="text-align: right">
+        <div class="footer">
+            <p><b>Web Programming </b> &nbsp; &nbsp; : &nbsp; &nbsp;
+                202135553 Sehyeon Yun &nbsp; &nbsp;/202034918 Seyoung Park  &nbsp; &nbsp;/<br>
+				 202234945 seunggyu Han &nbsp; &nbsp;  / 202236975 Jisung Han &nbsp; &nbsp
+                <br>
+            </p>
+        </div>
+    </div>
+        
+    </body>
+    
+    </html>

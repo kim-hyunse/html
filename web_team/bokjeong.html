@@ -1,0 +1,161 @@
+<html lang="EN">
+
+<head>
+    <title>My University Life</title>
+    <META charset="UTF-8">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Bebas+Neue&family=Caveat:wght@400;500;600&&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Patrick+Hand&family=Caveat+Brush&family=Kalam:wght@300;400&display=swap');
+
+        @import url('mainStyle.css');
+
+        @import url('menuStyle.css');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 10px;
+            background-color: #004593;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script>
+
+        function println(value) {
+
+            if (value != undefined) document.write(value);
+            document.write("<br>");
+
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center">
+        <div class="header">
+            <h1>My University Life</h1>
+            <p>GACHON UNIVERSITY</p>
+        </div>
+    </div>
+    <section class="blurry-menu"><!--여기까지 수정 X -->
+        <ul>
+            <li><a href="main.html">Main</a></li><!--main html만들어서 첨부하기-->
+            <li><a href="facilities.html">Facilities</a></li><!--Facilities html만들어서 첨부하기-->
+            <li><a href="Department.html">Department</a></li><!--Department html만들어서 첨부하기-->
+            <li><a href="gachon.html">Restaurant</a></li>
+        </ul>
+    </section>
+    <div class="contents">
+        <div class="leftcolumn"><!--left column 자기 페이지에 맞게 수정 -->
+            <div class="card">
+                <h2>Restaurant</h2><!-- 자기 페이지 이름으로 변경 -->
+                <h3>Select the local you want to see <br> the distribution of BOKJEONG restaurants!</h3><!--자기 페이지에 대한 간단한 설명-->
+        
+
+                <div id="map" style="width:100%;height:450px;"></div>
+
+                <script type="text/javascript"
+                    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ceb4c80afbee639b701a5b08fb75a6f2"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = {
+                            center: new kakao.maps.LatLng(37.45523085022528  , 127.1276641734266  ), // 지도의 중심좌표
+                            level: 4, // 지도의 확대 레벨
+                            mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+
+                        };
+                    // 지도를 생성
+                    var map = new kakao.maps.Map(mapContainer, mapOption);
+
+
+                    var positions = [
+                        {
+                            title: '겐코',
+                            latlng: new kakao.maps.LatLng(37.45450329622621, 127.1276516346902 )
+                        },
+                        {
+                            title: '포크포크',
+                            latlng: new kakao.maps.LatLng(37.45560716557552, 127.12753201143546 )
+                        },
+                        {
+                            title: '친친',
+                            latlng: new kakao.maps.LatLng(37.45652172792501 , 127.12749965719308 )
+                        },
+                        {
+                            title: '봉구통닭',
+                            latlng: new kakao.maps.LatLng(37.457243247807845 , 127.12683968506369 )
+                        },
+						{
+                            title: '쌈촌',
+                            latlng: new kakao.maps.LatLng(37.45746860348883  , 127.12674399401553  )
+                        },
+						{
+                            title: '오르막커피',
+                            latlng: new kakao.maps.LatLng(37.45345623067442   , 127.12731644788093   )
+                        },
+						{
+                            title: '10술집',
+                            latlng: new kakao.maps.LatLng(37.453782508872095    , 127.12763063122173    )
+                        },
+
+						];
+
+                    var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+
+                    for (var i = 0; i < positions.length; i++) {
+
+                        // 마커 이미지의 이미지 크기
+                        var imageSize = new kakao.maps.Size(24, 35);
+
+                        // 마커 이미지를 생성 
+                        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+                        // 마커를 생성
+                        var marker = new kakao.maps.Marker({
+                            map: map, // 마커를 표시할 지도
+                            position: positions[i].latlng, // 마커를 표시할 위치
+                            title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시
+                            image: markerImage // 마커 이미지 
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+		<div class="rightcolumn">
+            <div class="card">
+                <a href="gachon.html">
+                    <h2>COLLECTION</h2>
+                </a>
+                <a href="taepyeong.html">
+                    <h2>TAEPYEONG</h2>
+                </a>
+                <a href="bokjeong.html">
+                    <h2>BOKJEONG</h2>
+                </a>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card" style="height: 500px">
+                <h2>Map Widget</h2>
+                <h5>Click the map and Search Quickly!</h5>
+                <div>
+                    <a href="https://goo.gl/maps/Drh5A2EworcA1SPV7"
+                        onclick="window.open(this.href, '_blank', 'width=400px, height=400px'); return false;"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12669.385407694574!2d127.12387073093385!3d37.45254351151316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1622312588438!5m2!1sko!2skr"
+                            width="100%" height="300px" style="border:0;" allowfullscreen=""
+                            loading="lazy"></iframe></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div style="text-align: right">
+        <div class="footer">
+            <p><b>Web Programming </b> &nbsp; &nbsp; : &nbsp; &nbsp;
+                202135553 Sehyeon Yun &nbsp; &nbsp;/202034918 Seyoung Park  &nbsp; &nbsp;/<br>
+				 202234945 seunggyu Han &nbsp; &nbsp;  / 202236975 Jisung Han &nbsp; &nbsp
+                <br>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
