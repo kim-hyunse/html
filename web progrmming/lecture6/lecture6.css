@@ -1,0 +1,11 @@
+body{font-family:Times New Roman;}
+#section1 img{vertical-align:middle;}
+h1{ font-style:bold; font-size:xx-large; color:#003399; display:inline-block; padding-left:10px}
+#section2{background-color:#cfcfff; float:left; margin:10px 20px 5px 0px;}
+a{text-decoration:none;}
+a:link {color:blue;}
+a:visited{color:purple;}
+a:hover{color:red;}
+#section3{float:right; font-style:italic; font-size:small;}
+#section4{padding:0px 0px 0px 300px;}
+

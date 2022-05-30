@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="Hyunse">
+
+  <title>overflow property</title>
+  <style>img{
+             width:250px;
+			 height:300;
+			 div{
+             width:250px;
+			 height:150px;
+			 overflow:hidden;
+  }</style>
+ </head>
+<body>
+<h2>overflow property</h2>
+<div><img src="apple.jpg"></div>
+</body>
+</html>

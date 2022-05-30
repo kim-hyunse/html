@@ -1,0 +1,24 @@
+#section1{background-color:black; text-align:center;} 
+h1{color:white; display:inline-block; text-align:center;}
+#section2{background-color:gray; float:middle; text-align:center;}
+a{text-decoration:none;  }
+a:link {color:white; }
+a:visited{color:purple;}
+a:hover{background-color:white; color:black;}
+#section3{float:middle; text-align:right;  font-style:italic; font-size:small; background-color:gray; color:white;}
+#year{float:left; font-style:italic;}
+#name{float:right; font-style:bold;}
+#section4{padding:0px 0px 0px 300px;}
+#section5{float:left;} img{vertical-align:middle;}
+ul{ list-style-image: url( "icon.png" );}
+@media (max-width:700px)	{
+body {width:auto;}
+div {width:auto; float:none;}
+a{width:auto; float:none;}
+#section1 {width:auto; float:none;}
+#section2 {width:auto; float:none;}
+#section3 {width:auto; float:none;}
+#section4 {width:auto; float:none; padding:0px 0px 0px 0px;}
+#section5 {width:auto; float:none;}
+#year {width:auto; float:none;}
+#name {width:auto; float:none;}}

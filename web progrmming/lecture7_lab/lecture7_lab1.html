@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="Hyunse">
+  <title>14 April, 2022</title>
+ <style>
+  h2:first-letter { color: red; font-size:30px; text-transform:capitalize;} 
+  h3{color:blue;}
+  #answer:checked + div{background-color:black;}
+  #hint:checked + div{background-color:gray;}
+  #white{color:white; }
+ 
+</style>
+</head>
+ <body>
+	<form>
+	<h2>question</h2>
+	<h3>What is the capital of korea?</h3>
+	write the answer: <input type="text" name="user">
+	</form>
+	<h2>hint</h2>
+	See hints:
+	<input type="checkbox" id="hint"/>
+	<div id="white">
+	The place where Namdaemun is located
+	</div>
+	<br>
+	See the answer:
+	<input type="checkbox" id="answer"/>
+	<div id="white">
+	SEOUL
+	</div>
+
+ </body>
+</html>
