@@ -1,8 +1,12 @@
 <head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Bebas+Neue&family=Caveat:wght@400;500;600&&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Patrick+Hand&family=Caveat+Brush&family=Kalam:wght@300;400&display=swap');
 
+  @import url('register.css');
+</style>
 </head>
 <body>
-    <div>
+    <div class="register">
         <div>
             <h1>Register Form</h1>
             <form action="register.php" method="post">
@@ -12,7 +16,7 @@
                 <p><input type="text" name="nickname" id="Nickname" placeholder="Nickname"></p>
                 <p><input type="text" name="location" id="location" placeholder="location"></p>
                 <p><input type="date" name="birthday" id="birthday"></p>
-                <input type="submit" value="register">
+                <input type="submit" id="register" value="register">
             </form>
             <p class="regist_btn">Already a member? &nbsp; <a href="../login/login.html">Sign in</a></p>
     </div>

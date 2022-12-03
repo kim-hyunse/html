@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&display=swap');
+
+body{ background-image: linear-gradient(to bottom, #D0A9F5, white);
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+.login { text-align: center;
+	background-color: #FFFFFF;
+  	display: grid;
+  	place-items: center;
+ 	min-height: 100vh;
+ 
+  	}
+
+#login {
+	 background-color: #FFFFFF;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
